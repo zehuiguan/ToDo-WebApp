@@ -1,0 +1,167 @@
+/**
+ * 通用
+ * @param  {[type]} @name 
+ * @param  {[type]} @px   [description]
+ * @return {[type]}       [description]
+ */
+.px2px(@name, @px){
+    @{name}: round(@px / 2) * 1px;
+    [data-dpr="2"] & {
+        @{name}: @px * 1px;
+    }
+    // for mx3
+    [data-dpr="2.5"] & {
+        @{name}: round(@px * 2.5 / 2) * 1px;
+    }
+    // for 小米note
+    [data-dpr="2.75"] & {
+        @{name}: round(@px * 2.75 / 2) * 1px;
+    }
+    [data-dpr="3"] & {
+        @{name}: round(@px / 2 * 3) * 1px;
+    }
+    // for 三星note4
+    [data-dpr="4"] & {
+        @{name}: @px * 2px;
+    }
+}
+
+/**
+ * font-size
+ * @param  {[type]} @px pixel
+ */
+.fontSize(@px){
+    [data-dpr="1"] & {
+        font-size: round(@px / 2) * 1px;
+    }
+    [data-dpr="2"] & {
+        font-size: @px * 1px;
+    }
+    // for mx3
+    [data-dpr="2.5"] & {
+        font-size: round(@px * 2.5 / 2) * 1px;
+    }
+    // for 小米note
+    [data-dpr="2.75"] & {
+        font-size: round(@px * 2.75 / 2) * 1px;
+    }
+    [data-dpr="3"] & {
+        font-size: round(@px / 2 * 3) * 1px
+    }
+    // for 三星note4  
+    [data-dpr="4"] & {
+        font-size: @px * 2px;
+    }
+}
+
+/**
+ * box-shadow
+ * @param  {[type]} @x     [description]
+ * @param  {[type]} @y     [description]
+ * @param  {[type]} @blur  [description]
+ * @param  {[type]} @color [description]
+ */
+.boxShadow(@x, @y, @blur, @color) {
+    [data-dpr="1"] & {
+        box-shadow: round(@x / 2) * 1px round(@y / 2) * 1px round(@blur / 2) * 1px @color;
+    }
+    [data-dpr="2"] & {
+        box-shadow: @x * 1px @y * 1px @blur * 1px @color;
+    }
+    // for mx3
+    [data-dpr="2.5"] & {
+        box-shadow: round(@x * 2.5 / 2) * 1px round(@y * 2.5 / 2) * 1px round(@blur * 2.5 / 2) * 1px @color;
+    }
+    // for 小米note
+    [data-dpr="2.75"] & {
+        box-shadow: round(@x * 2.75 / 2) * 1px round(@y * 2.75 / 2) * 1px round(@blur * 2.75 / 2) * 1px @color;
+    }
+    [data-dpr="3"] & {
+        box-shadow: round(@x / 2 * 3) * 1px round(@y / 2 * 3) * 1px round(@blur / 2 * 3) * 1px @color;
+    }
+    // for 三星note4  
+    [data-dpr="4"] & {
+        box-shadow: @x * 2px @y * 2px @blur * 2px @color;
+    }    
+}
+/**
+ * [border description]
+ * @param  {[type]} @px      [description]
+ * @param  {[type]} @style   [description]
+ * @param  {[type]} @color   [description]
+ * @param  {[type]} @border: border        [description]
+ * @return {[type]}          [description]
+ */
+.border(@px, @style, @color, @border: border) {
+    [data-dpr="1"] & {
+        @{border}: round(@px / 2) * 1px   @style @color;
+    }
+    [data-dpr="2"] & {
+        @{border}: @px * 1px  @style @color;
+    }
+    // for mx3
+    [data-dpr="2.5"] & {
+        @{border}: round(@px * 2.5 / 2) * 1px * 1px @style @color;
+    }
+    // for 小米note
+    [data-dpr="2.75"] & {
+        @{border}: round(@px * 2.75 / 2) * 1px @style @color;
+    }
+    [data-dpr="3"] & {
+        @{border}: round(@px / 2 * 3) * 1px @style @color;
+    }
+    // for 三星note4  
+    [data-dpr="4"] & {
+        @{border}: @px * 2px @style @color;
+    }    
+}
+
+/**
+ * padding
+ * @param  {[type]} @h [description]
+ * @param  {[type]} @v [description]
+ * @return {[type]}    [description]
+ */
+.padding(@h, @v) {
+    padding: round(@h / 2) * 1px round(@v / 2) * 1px;
+    [data-dpr="2"] & {
+        padding: @h * 1px @v * 1px;
+    }
+    // for mx3
+    [data-dpr="2.5"] & {
+        padding: round(@h * 2.5 / 2) * 1px round(@v * 2.5 / 2) * 1px;
+    }
+    // for 小米note
+    [data-dpr="2.75"] & {
+        padding: round(@h * 2.75 / 2) * 1px round(@v * 2.75 / 2) * 1px ;
+    }
+    [data-dpr="3"] & {
+        padding: round(@h / 2 * 3) * 1px round(@v / 2 * 3) * 1px;
+    }
+    // for 三星note4
+    [data-dpr="4"] & {
+        padding: @h * 2px @v * 2px ;
+    }    
+}
+
+.padding(@t, @r, @b, @l) {
+    padding: round(@h / 2) * 1px round(@v / 2) * 1px;
+    [data-dpr="2"] & {
+        padding: @t * 1px @r * 1px @b * 1px @l * 1px;
+    }
+    // for mx3
+    [data-dpr="2.5"] & {
+        padding: round(@t * 2.5 / 2) * 1px round(@r * 2.5 / 2) * 1px round(@b * 2.5 / 2) * 1px round(@l * 2.5 / 2) * 1px;
+    }
+    // for 小米note
+    [data-dpr="2.75"] & {
+        padding: round(@t * 2.75 / 2) * 1px round(@r * 2.75 / 2) * 1px round(@b * 2.75 / 2) * 1px round(@l * 2.75 / 2) * 1px;
+    }
+    [data-dpr="3"] & {
+        padding: round(@t / 2 * 3) * 1px round(@r / 2 * 3) * 1px round(@b / 2 * 3) * 1px round(@l / 2 * 3) * 1px;
+    }
+    // for 三星note4
+    [data-dpr="4"] & {
+        padding: @t * 2px @r * 2px @b * 2px @l * 2px;
+    }      
+}

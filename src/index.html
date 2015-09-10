@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html style="width: 100%; height: 100%; overflow: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <title>GTD Tools</title>
+    <meta name="toDo 单页应用" content="记事本 任务管理 webApp">
+    <meta name="description" content="用于记录待办事项的工具">
+    <meta name="author" content="Zach Kwan, zehuiguan@163.com">
+    <script src="js/mobile-util.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/fontello.css">
+</head>
+
+<body>
+    <header>
+        <h1>GTD Tools</h1>
+    </header>
+    <div class="main">
+        <div class="type" id="type">
+            <ul class="type-wrap">
+                <li>
+                    <h2 id="type-all">
+                        <i class="icon-menu"></i>
+                        <span>所有任务</span>
+                    </h2>
+                </li>
+                <li>
+                    <h2>
+                        <i class="icon-menu"></i>
+                        <span>分类列表</span>
+                    </h2>
+                    <ul class="item-wrap"></ul>
+                </li>                
+            </ul>
+            <div class="add">
+                <i class="icon-plus" id="icon-plus"></i>
+                <span>新增分类</span>
+            </div>
+        </div>
+        <div class="list hide" id="list">
+            <div class="list-menu">
+                <ul>
+                    <li class="choose">所有</li>
+                    <li>未完成</li>
+                    <li>已完成</li>
+                </ul>
+            </div>
+            <ul class="list-wrap"></ul>
+            <div class="add">
+                <i class="icon-plus"></i>
+                <span>新增任务</span>
+            </div>  
+        </div>
+        <div class="task hide" id="task">
+            <div class="task-title">
+                任务标题：
+                <span></span>
+                <input type="text" id="title-edit" placeholder="在此输入任务标题">
+                <div class="task-status">
+                    <i class="icon-ok-circled2 task-finish"></i>
+                    <i class="icon-edit task-edit"></i>                    
+                </div>
+            </div>
+            <div class="task-date">
+                任务时间：
+                <span></span>
+                <input type="text" id="date-edit" placeholder="在此输入任务日期（格式：2015-10-01）">
+            </div>
+            <div class="task-content">
+                <textarea id="content-edit" placeholder="在此输入任务内容" readonly="readonly"></textarea>
+                <p class="task-error"></p>
+                <button class="mybutton btn4">取消</button>
+                <button class="mybutton btn3">确定</button>       
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="box">
+        <div class="box-title">
+            <div class="box-name"></div>
+        </div>
+        <div class="box-main"></div>
+    </div>
+    <script src="js/require.js" data-main="js/main.js"></script>
+</body>
+</html>

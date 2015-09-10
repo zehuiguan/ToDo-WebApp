@@ -1,0 +1,63 @@
+.list {
+    width: 750px/@ppr;
+    height: 1210px/@ppr;
+}
+.list-menu {
+    position: absolute;
+    top: 0;
+    width: 750px/@ppr;
+    height: 90px/@ppr;
+    background: #eee;
+    .border(2, solid, #ccc, border-bottom);
+}
+.list-menu ul {
+    .px2px(margin-left, 20);
+    .px2px(margin-top, 20);
+}
+.list-menu li {
+    float: left;
+    .fontSize(28);
+    .px2px(line-height, 40);
+    .padding(0, 18);
+    .border(2, solid, #eee);
+}
+.list-wrap {
+    position: absolute;
+    top: 82px/@ppr;
+    bottom: 80px/@ppr;
+    width: 750px/@ppr;
+    overflow: scroll;
+    background: #fff;
+    .border(2, solid, #ccc, border-bottom);
+}
+.list-wrap h5 {
+    .fontSize(32);
+    line-height: 60px/@ppr;
+    background: #fafaee;
+    padding-left: 40px/@ppr;
+}
+.list-wrap h6 {
+    .fontSize(32);
+    line-height: 56px/@ppr;
+    padding-left: 70px/@ppr;
+}
+.list-menu .choose {
+    background: #fff;
+    .border(2, solid, #ccc);
+}
+.list-wrap .choose {
+    background: #f2f2f2;
+}
+.list-wrap h5 .list-delete {
+    float: right;
+    line-height: 60px/@ppr;
+    .fontSize(24);
+}
+.list-wrap h6 .list-delete {
+    float: right;
+    line-height: 56px/@ppr;
+    .fontSize(24);
+}
+.list-finish {
+    text-decoration: line-through;
+}

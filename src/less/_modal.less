@@ -1,0 +1,119 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+.box {
+    display: none;
+    position: relative;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 700px/@ppr;
+    height: 400px/@ppr;
+    background: #fff;
+    z-index: 1000;
+    .px2px(border-radius, 10);
+    
+}
+.box-title {
+    position: relative;
+    width: 100%;
+    height: 60px/@ppr;
+    background: #ddd;
+    .px2px(border-top-left-radius, 10);
+    .px2px(border-top-right-radius, 10);
+}
+.box-title .box-name {
+    position: absolute;
+    top: 0;
+    .px2px(left, 16);
+    .fontSize(28);
+    .px2px(line-height, 60);
+}
+.box-title .box-close {
+    position: absolute;
+    .px2px(top, 14);
+    .px2px(right, 14);    
+    background: #999;
+    .px2px(height, 56);
+    .px2px(width, 56);
+    border-radius: 100%;
+}
+.box-title .box-close:hover {
+    background: #666;
+}
+.box-main {
+    padding: 10px;
+    .fontSize(32); 
+    line-height: 2.5;
+}
+.box-main option {
+    font-size: 16px;
+}
+.box-main .new-type {
+    width: 400px/@ppr;
+    .px2px(margin-left, 34);
+    .padding(10, 14);
+    outline: none;
+    .border(2, solid, #d9d9d9);
+    border-top-color: #c0c0c0;
+    .fontSize(28);
+}
+.box-main .new-type:hover {
+    .border(2, solid, #b9b9b9);    
+    border-top-color: #a0a0a0;
+}
+.box-main .new-type:focus {
+    .border(2, solid, #4d90fe);      
+}
+.box-main .type-select {
+    width: 400px/@ppr;
+    .fontSize(32);   
+    .px2px(margin-left, 6);
+    .border(2, solid, #d9d9d9);
+    border-top-color: #c0c0c0;
+}
+.box-main .type-select:hover {
+    .border(2, solid, #b9b9b9);
+    border-top-color: #a0a0a0;
+}
+.box-main .type-select:focus {
+    .border(2, solid, #4d90fe);    
+}
+.mybutton {
+    width: 160px/@ppr;
+    height: 56px/@ppr;
+    font-size: 24px/@ppr;
+    background-color: #aaa;
+    .px2px(border-radius, 12);
+    color: #fff;
+    .padding(12, 48);
+    border: none;
+    outline: none;
+    .px2px(margin-left, 20);
+}
+.mybutton:hover {
+    background-color: #777;
+}
+.box-main .btn1 {
+    position: absolute;
+    .px2px(bottom, 30);
+    right: 260px/@ppr;
+}
+.box-main .btn2 {
+    position: absolute;
+    .px2px(bottom, 30);
+    right: 60px/@ppr;
+}
+.error {
+    color: #d50000;
+}

@@ -1,0 +1,63 @@
+.type {
+    width: 750px/@ppr;
+    height: 1210px/@ppr;
+    background: #f2f2f2;
+}
+.type-wrap {
+    position: absolute;
+    .px2px(top, 10);
+    bottom: 90px/@ppr;
+    width: 750px/@ppr;
+    overflow: scroll;
+    .border(2, solid, #cbcbcb, border-bottom);
+}
+.add {
+    width: 750px/@ppr;
+    height: 90px/@ppr;
+    position: absolute;
+    bottom: 0;
+    background: #eee;
+    .fontSize(36);
+    line-height: 90px/@ppr;
+    cursor: pointer;
+}
+.type-wrap h2 {
+    .fontSize(36);
+    line-height: 90px/@ppr;
+    padding-left: 24px/@ppr;
+    .border(2, solid, #cbcbcb, border-bottom);
+}
+.type-wrap h3 {
+    .fontSize(36);
+    line-height: 80px/@ppr;
+    padding-left: 38px/@ppr;
+    .border(2, solid, #cbcbcb, border-bottom);
+}
+.type-wrap h4 {
+    .fontSize(32);
+    line-height: 70px/@ppr;
+    padding-left: 88px/@ppr;
+    .border(2, solid, #cbcbcb, border-bottom);
+}
+.type-wrap span {
+    display: inline-block;
+}
+.type .choose {
+    background: #bbb;
+    color: #fff;
+    .px2px(border-radius, 5);
+    .boxShadow(1, 1, 3, #777);
+}
+#icon-plus {
+    padding-left: 36px/@ppr;
+}
+.item-wrap h3 .type-delete {
+    float: right;
+    line-height: 80px/@ppr;
+    .fontSize(28);
+}
+.item-wrap h4 .type-delete {
+    float: right;
+    line-height: 70px/@ppr;
+    .fontSize(28);
+}

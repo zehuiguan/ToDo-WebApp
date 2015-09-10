@@ -1,0 +1,80 @@
+.task {
+    width: 750px/@ppr;
+    height: 1210px/@ppr;
+    overflow: scroll;
+}
+.task-title {
+    .fontSize(32);
+    height: 100px/@ppr;
+    line-height: 100px/@ppr;
+    padding-left: 30px/@ppr;
+    .border(2, solid, #cbcbcb, border-bottom);
+    background: #f2f2f2;
+}
+.task-date {
+    height: 100px/@ppr;
+    line-height: 100px/@ppr;
+    .fontSize(32);
+    padding-left: 30px/@ppr;
+    background: #fafaee;
+    .border(2, solid, #ccc, border-bottom);
+}
+.task-content {
+    top: 200px/@ppr;
+    bottom: 0;
+    .px2px(padding, 30);
+    height: 920px/@ppr;
+}
+.task-status {
+    float: left;
+    display: block;
+}
+.task-status .task-finish {
+    position: absolute;
+    right: 140px/@ppr;
+    .fontSize(48);    
+}
+.task-status .task-edit {
+    position: absolute;
+    .px2px(right, 40);    
+    .fontSize(48);    
+}
+.task #title-edit {
+    display: none;
+    .px2px(margin-left, 20);
+    .padding(10, 14);
+    .border(2, solid, #d9d9d9);    
+    border-top-color: #c0c0c0;
+    .fontSize(28); 
+}
+.task #date-edit {
+    .task #title-edit
+}
+.content-edit-border {
+    .px2px(border-radius, 8);
+    .border(2, solid, #d9d9d9);
+}
+.task #content-edit {
+    width: 690px/@ppr;
+    height: 850px/@ppr;
+    .px2px(padding, 20);
+    .fontSize(28);
+    outline: none;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.task-content .btn3 {
+    display: none;
+    float: right;
+    .px2px(margin-top, 20);
+}
+.task-content .btn4 {
+    .task-content .btn3
+}
+.task-error {
+    display: inline;
+    visibility: hidden;
+    color: #d50000;
+    .fontSize(28);
+    line-height:2.5;
+}

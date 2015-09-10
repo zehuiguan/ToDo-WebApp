@@ -1,0 +1,1 @@
+require(["gtd"],function(a){a.init(),requirejs.config({paths:{hammer:"./hammer.min",util:"./util"}})});
