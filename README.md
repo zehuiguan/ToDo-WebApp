@@ -61,4 +61,4 @@
 
 * **前端工程化**
     
-    使用 grunt，自动编译 Sass，压缩 HTML、CSS 和 JavaScript 代码。并且配置了自动流程。
+    使用 grunt，自动编译 LESS，压缩 HTML、CSS 和 JavaScript 代码。并且配置了自动流程。
