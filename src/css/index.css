@@ -858,7 +858,7 @@ header h1 {
   top: 2.66666667rem;
   bottom: 0;
   padding: 15px;
-  height: 12.26666667rem;
+  height: 10.66666667rem;
 }
 [data-dpr="2"] .task-content {
   padding: 30px;
@@ -1120,7 +1120,7 @@ header h1 {
 }
 .task #content-edit {
   width: 9.2rem;
-  height: 11.33333333rem;
+  height: 10rem;
   padding: 10px;
   outline: none;
   background-color: #fff;

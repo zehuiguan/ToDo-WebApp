@@ -703,7 +703,7 @@ define(['util'], function(_) {
     }
 
     // 筛选菜单点击效果
-    _.delegateEvent(".list-menu", "li", "click", menuHandler);
+    _.delegateEvent(_.$(".list-menu"), "li", "click", menuHandler);
     function menuHandler(event) {
         var other = _.$(".list-menu").getElementsByTagName('*');
         var bool;
