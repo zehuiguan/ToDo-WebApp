@@ -11,7 +11,7 @@
 * 手机查看 ↓ 二维码 ↓
     
     ![todoWebApp](http://7xj3al.com1.z0.glb.clouddn.com/1442323184.png)
-* [我的博客 HyG](http://zehuiguan.github.io)
+* [我的博客 日落后的群岚](http://zehuiguan.github.io)
 
 ## Details
 
